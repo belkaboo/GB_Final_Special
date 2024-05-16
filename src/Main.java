@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        //todo
+        UI menu = new UI();
+        menu.start();
     }
 }
