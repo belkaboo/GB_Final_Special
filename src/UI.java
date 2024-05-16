@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 
 public class UI {
-        private List<Animal> animals = new ArrayList<>();
+
 
         public void start() {
+            Functions Func = new Functions();
             Scanner scanner = new Scanner(System.in);
             while (true) {
                 System.out.println("1. Добавить новое животное");
@@ -21,7 +22,7 @@ public class UI {
 
                 switch (choice) {
                     case 1:
-                        //todo
+                        Func.addAnimal();
                         break;
                     case 2:
                         //todo
@@ -41,5 +42,6 @@ public class UI {
                 }
             }
         }
+
 }
 

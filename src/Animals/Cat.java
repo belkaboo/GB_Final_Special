@@ -1,8 +1,8 @@
 package Animals;
 
 public class Cat extends Pets {
-    public Cat(String name, String birthdate, String commands) {
-        super(name, birthdate, commands);
+    public Cat(String name, String birthdate) {
+        super(name, birthdate);
     }
 
     @Override

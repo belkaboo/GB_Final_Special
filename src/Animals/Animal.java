@@ -5,10 +5,10 @@ public abstract class Animal {
     private String birthdate;
     private String commands;
 
-    public Animal(String name, String birthdate, String commands) {
+    public Animal(String name, String birthdate) {
         this.name = name;
         this.birthdate = birthdate;
-        this.commands = commands;
+        this.commands = "";
     }
 
     public String getName() {
@@ -35,6 +35,13 @@ public abstract class Animal {
         this.commands = commands;
     }
 
+    public void addCommand(String command) {
+        if (this.commands.isEmpty()) {
+            this.commands = command;
+        } else {
+            this.commands += ", " + command;
+        }
+    }
 
 
     @Override
