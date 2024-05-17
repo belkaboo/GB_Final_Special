@@ -11,7 +11,7 @@ public class UI {
             Scanner scanner = new Scanner(System.in);
             while (true) {
                 System.out.println("1. Добавить новое животное");
-                System.out.println("2. Определить тип животного");
+                System.out.println("2. Определить тип животного"); // не совсем понятно что делать
                 System.out.println("3. Вывести список команд животного");
                 System.out.println("4. Добавить новые команды");
                 System.out.println("5. Вывести список всех животных");

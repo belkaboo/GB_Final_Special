@@ -90,5 +90,8 @@ public class Functions {
         }
         System.out.println("Животное не найдено.");
     }
+    public static void animalClassification() {
+        //todo
+    }
 
 }
