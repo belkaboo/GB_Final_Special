@@ -29,10 +29,10 @@ public class UI {
                         //todo
                         break;
                     case 3:
-                        //todo
+                        Functions.printCommands();
                         break;
                     case 4:
-                        //todo
+                        Functions.addCommand();
                         break;
                     case 5:
                         Functions.printAllAnimals();

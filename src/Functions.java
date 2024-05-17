@@ -57,5 +57,35 @@ public class Functions {
         }
     }
 
+    public static void printCommands() {
+        System.out.print("Введите имя животного для просмотра команд: ");
+        String name = scanner.nextLine();
+        for (Animal animal : animals) {
+            if (animal.getName().equals(name)) {
+                if (animal.getCommands().isEmpty()) {
+                    System.out.println(name + " Животное ещё не обучено");
+                } else {
+                    System.out.println(name + " знает следующие команды: " + animal.getCommands());
+                }
+                return;
+            }
+        }
+        System.out.println("Животное не найдено.");
+    }
+
+    public static void addCommand() {
+        System.out.print("Введите имя животного для обучения: ");
+        String name = scanner.nextLine();
+        for (Animal animal : animals) {
+            if (animal.getName().equals(name)) {
+                System.out.print("Введите команду для обучения: ");
+                String command = scanner.nextLine();
+                animal.addCommand(command);
+                System.out.println(name + " обучен новой команде.");
+                return;
+            }
+        }
+        System.out.println("Животное не найдено.");
+    }
 
 }
