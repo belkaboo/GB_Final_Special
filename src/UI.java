@@ -8,7 +8,6 @@ public class UI {
 
 
         public void start() {
-
             Scanner scanner = new Scanner(System.in);
             while (true) {
                 System.out.println("1. Добавить новое животное");
@@ -24,6 +23,7 @@ public class UI {
                 switch (choice) {
                     case 1:
                         Functions.addAnimal();
+                        Counter.add();
                         break;
                     case 2:
                         //todo

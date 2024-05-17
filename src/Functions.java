@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
+// ко всем методам добавить проверку на валидность введённых данных
 public class Functions {
     private static List<Animal> animals = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
+
     public static void addAnimal() {
         System.out.print("Введите тип животного (Dog, Cat, Hamster, Horse, Camel, Donkey): ");
         String type = scanner.nextLine();
