@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Functions {
-    private List<Animal> animals = new ArrayList<>();
-    Scanner scanner = new Scanner(System.in);
-    public void addAnimal() {
+    private static List<Animal> animals = new ArrayList<>();
+    private static Scanner scanner = new Scanner(System.in);
+    public static void addAnimal() {
         System.out.print("Введите тип животного (Dog, Cat, Hamster, Horse, Camel, Donkey): ");
         String type = scanner.nextLine();
         System.out.print("Введите имя: ");
@@ -41,6 +41,20 @@ public class Functions {
         }
         animals.add(animal);
         System.out.println("Животное добавлено.");
+    }
+    public static void printAllAnimals() {
+        if (animals.isEmpty()) {
+            System.out.println("Животных нет.");
+            return;
+        }
+
+        for (Animal animal : animals) {
+            System.out.println("Имя: " + animal.getName());
+            System.out.println("Тип: " + animal.getClass().getSimpleName());
+            System.out.println("Дата рождения: " + animal.getBirthdate());
+            System.out.println("Команды: " + animal.getCommands());
+            System.out.println("--------------------------");
+        }
     }
 
 
